@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spply - Profile</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta name="google-signin-client_id" content="YOUR_GOOGLE_CLIENT_ID.apps.googleusercontent.com">
+</head>
+<body>
+    <header>
+        <a href="home.html"><img src="img/logo.png" alt="Spply Logo" class="logo"></a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Welcome, User!</h2>
+        <p>Profile details and options will be available here.</p>
+        <div class="g-signin2" data-onsuccess="onSignIn"></div>
+        <button onclick="signOut()">Sign out</button>
+    </main>
+    <footer>
+        <p>&copy; 2024 Spply. All rights reserved.</p>
+    </footer>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
